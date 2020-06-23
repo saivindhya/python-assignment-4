@@ -1,0 +1,70 @@
+# Python function to find the Max of three numbers
+def max_of_three(x,y,z):
+        if (x >= y) and (x >= z): 
+            max = x 
+        elif (y >= x) and (y >= z): 
+            max = y 
+        else: 
+            max = z
+        return max
+x=int(input("enter the value of x:"))
+y=int(input("enter the value of y:"))
+z=int(input("enter the value of z:"))
+print(max_of_three( x, y, z))
+
+
+
+
+#Python program to reverse a string
+num=input("Enter any string:")
+x=num[::-1]
+print("The reversed string is",x)
+
+
+
+
+
+#Python function to check whether the number is prime or not
+def test_prime(n):
+    if (n==1):
+        return False
+    elif (n==2):
+        return True;
+    else:
+        for i in range(2,n):
+            if(n % i==0):
+                return False
+        return True  
+x=int(input("enter a number:"))           
+print(test_prime(x))
+
+
+
+
+
+#Use try, except, else and finally block to check whether the number is palindrome or not
+num=input("enter any number:")
+try:
+    x=int(num)
+    if(num==num[::-1]):
+    	print("given number is palindrome")
+    else:
+    	print("given number is not palindrome")
+except:
+	print("invalid number")
+finally:
+    print("end of the program")
+
+
+
+
+
+
+# python function to find sum of squares of first n natural numbers
+def sum_of_squ(n):
+	sum=0
+	for i in range(1,n+1):
+		sum=sum+(i*i)
+	return sum
+n=int(input("enter the value of n:"))
+print(sum_of_squ(n))
